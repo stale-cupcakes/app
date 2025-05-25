@@ -1,0 +1,14 @@
+{
+  "name": "my-electron-app",
+  "version": "1.0.0",
+  "description": "idk",
+  "main": "main.js",
+  "scripts": {
+    "test": "ping"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^36.3.1"
+  }
+}
