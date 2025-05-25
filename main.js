@@ -1,7 +1,6 @@
-// const { app, BrowserWindow } = require('electron') //import app and browserwindow
 const { app, BrowserWindow, ipcMain } = require('electron/main')
 const path = require('node:path')
-const createWindow = () => { //function to create the window
+const createWindow = () => { 
   const win = new BrowserWindow({
     width: 300,
     height: 400,
@@ -10,7 +9,7 @@ const createWindow = () => { //function to create the window
     }
   })
 
-  win.loadFile('index.html') //uses index html for the page
+  win.loadFile('index.html') 
 }
 
 app.whenReady().then(() => {
@@ -28,10 +27,3 @@ app.on('window-all-closed', () => {
   }
 })
 
-//Many of Electron's core modules are Node.js event emitters that adhere to Node's asynchronous event-driven architecture
-//can use react
-
-//1: new header
-//2: background/start screen
-//3: buttons for the start screen
-//
