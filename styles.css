@@ -53,3 +53,13 @@ body, html{
     font-family: 'Pixelify Sans', sans-serif;
     text-shadow:1px 0px 0px #FFA5A5;
 }
+.bg {
+  background-color: #FFC4C4;  /* your pink */
+  width: 90%;                 
+  height: 80%;
+  margin: 20px auto;         
+  padding: 50px;              
+  box-sizing: border-box;     
+  border-radius: 8px;      
+  /* box-shadow: 0 0 10px rgba(0,0,0,0.1);  */
+}
