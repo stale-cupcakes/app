@@ -1,0 +1,55 @@
+.rounded-corners {
+  border-radius: 10px;
+}
+body, html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F7EA87;
+}
+.titlebar {
+    -webkit-app-region: drag;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10px;
+}
+.nav-buttons{
+    display: flex;
+    width: 60px;
+    justify-content: space-evenly;
+    margin-left: 10px;
+    height: 100%;
+}
+.nav-buttons > button {
+    border: none;
+    aspect-ratio: 1;
+    border-radius: 20%;
+    height: 15px;
+    cursor: pointer;
+    margin-top: 10%;
+    -webkit-app-region: no-drag;
+}
+#close{
+    background-color: #FFC4C4;
+    /* background-image:url("https://img.freepik.com/premium-vector/pixel-art-style-cross-icon-button-close-icon-button-cancel-icon-button-8bit-style_1199668-896.jpg"); */
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+#minimize{
+    background-color: #FFC4C4;
+}
+
+#maximize{
+    background-color: #FFC4C4;
+}
+#title{
+    color: #FFC4C4;
+    position: absolute;
+    right: 125px;
+    font-family: 'Pixelify Sans', sans-serif;
+    text-shadow:1px 0px 0px #FFA5A5;
+}

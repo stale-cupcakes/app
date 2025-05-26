@@ -3,20 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
+  <meta
+  http-equiv="Content-Security-Policy"
+  content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com;"
+  />
+
     <meta
       http-equiv="X-Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
+    <link rel="stylesheet" href="styles.css">
     <title>Hello from Electron renderer!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Hello!</h1>
-    <p>Hi!</p>
-    <p id="info"></p>
+    <nav class="titlebar">
+      <div class = "nav-buttons">
+      <button id = "close"></button>
+      <button id = "minimize"></button>
+      <button id = "maximize"></button>
+      </div>
+      <p id="title">Rock Paper Scissors</p>
+    </nav>
+    <script src ="script.js"></script>
+    <script src="renderer.js"></script>
   </body>
-  <script src="./renderer.js"></script>
 </html>
